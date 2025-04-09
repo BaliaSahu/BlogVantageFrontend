@@ -17,7 +17,8 @@ const Navbar = () => {
   const handleLogout=async(e)=>{
     e.preventDefault();
     try{
-      const{data}=axios.get("http://localhost:4000/user/logout",{
+      // const{data}=axios.get("http://localhost:4000/user/logout",{
+      const{data}=axios.get("https://blogvantagebackend-2.onrender.com/user/logout",{
         withCredentials:true
       })
       setIsAuthenticated(false);

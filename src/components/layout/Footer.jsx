@@ -7,7 +7,8 @@ import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 
 const Footer = () => {
-  const isDashBoard = useLocation("http://localhost:5173")
+  // const isDashBoard = useLocation("http://localhost:5173")
+  const isDashBoard = useLocation("https://blogvantagebackend-2.onrender.com")
   const { mode, setMode } = useContext(Context);
 
   return (
