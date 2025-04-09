@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react'
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom'
-import './app.css'
+import './App.css'
 import Home from './components/pages/Home'
 import Register from './components/pages/Register'
 import Login from './components/pages/Login'
