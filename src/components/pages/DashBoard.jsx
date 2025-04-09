@@ -36,14 +36,14 @@
 
 import React, { useContext, useState } from "react";
 import SideBar from "../layout/SideBar";
-import MyBlogs from "../miniComponents/MyBlogs";
-import MyProfile from "../miniComponents/MyProfile";
-import CreateBlog from "../miniComponents/CreateBlog";
-import Chart from "../miniComponents/Chart";
+import MyBlogs from '../miniComponents/MyBlogs.jsx';
+import MyProfile from "../miniComponents/MyProfile.jsx";
+import CreateBlog from "../miniComponents/CreateBlog.jsx";
+import Chart from "../miniComponents/Chart.jsx";
 import { Context } from "../../main";
 import { Navigate } from "react-router-dom";
-import CreateVideoBlog from "../minicomponents/CreateVideoBlog";
-import MyVideoBlogs from "../minicomponents/MyVideoBlogs";
+import CreateVideoBlog from "../miniComponents/CreateVideoBlog.jsx";
+import MyVideoBlogs from "../miniComponents/MyVideoBlogs.jsx";
 
 const Dashboard = () => {
   const [component, setComponent] = useState("MyBlogs");

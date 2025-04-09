@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { Context } from '../../main'
-import LatestBlog from '../minicomponents/LatestBlog'
+import LatestBlog from '../miniComponents/LatestBlog'
 
 
 const Blogs = () => {

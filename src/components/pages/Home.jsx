@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
 import { Context } from '../../main'
-import HeroSection from '../minicomponents/HeroSection'
-import TrendingBlog from '../minicomponents/TrendingBlog'
-import LatestBlog from '../minicomponents/LatestBlog'
-import PopularAuthor from '../minicomponents/PopularAuthor'
+import HeroSection from '../miniComponents/HeroSection'
+import TrendingBlog from '../miniComponents/TrendingBlog'
+import LatestBlog from '../miniComponents/LatestBlog'
+import PopularAuthor from '../miniComponents/PopularAuthor'
 
 const Home = () => {
   const { mode, setMode, blogs } = useContext(Context)
