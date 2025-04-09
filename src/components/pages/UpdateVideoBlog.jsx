@@ -26,7 +26,8 @@ const UpdateVideoBlog = () => {
             const fetchBlog = async (e) => {
                   e?.preventDefault();
                   try {
-                        const { data } = await axios.get(`http://localhost:4000/user/videoblog/${id}`,
+                        // const { data } = await axios.get(`http://localhost:4000/user/videoblog/${id}`,
+                        const { data } = await axios.get(`https://blogvantagebackend-2.onrender.com/user/videoblog/${id}`,
                               { withCredentials: true }
                         )
                         console.log(data);
@@ -71,7 +72,8 @@ const UpdateVideoBlog = () => {
                   updatedData.append("secure_url2", secure_url2);
                   updatedData.append("public_id2", public_id2);
 
-                  const { data } = await axios.patch(`http://localhost:4000/author/update/video/blogs/${id}`, updatedData,
+                  // const { data } = await axios.patch(`http://localhost:4000/author/update/video/blogs/${id}`, updatedData,
+                  const { data } = await axios.patch(`https://blogvantagebackend-2.onrender.com/author/update/video/blogs/${id}`, updatedData,
                         {
                               withCredentials: true,
                               headers: { "Content-Type": "multipart/form-data" }

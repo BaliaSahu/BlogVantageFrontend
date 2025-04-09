@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import { Context } from '../../main'
 // import HeroSection from '../miniComponents/HeroSection.jsx';
-import HeroSection from '../miniComponents/HeroSection.jsx';
-import TrendingBlog from '../miniComponents/TrendingBlog';
-import LatestBlog from '../miniComponents/LatestBlog.jsx';
-import PopularAuthor from '../miniComponents/PopularAuthor';
+import HeroSection from '../minicomponents/HeroSection.jsx';
+import TrendingBlog from '../minicomponents/TrendingBlog.jsx';
+import LatestBlog from '../minicomponents/LatestBlog.jsx';
+import PopularAuthor from '../minicomponents/PopularAuthor.jsx';
 
 const Home = () => {
   const { mode, setMode, blogs } = useContext(Context)

@@ -7,7 +7,8 @@ const MyVideoBlogs = () => {
       const [myBlogs, setMyBlogs] = useState([]);
       const deleteBlogHandler=async(id)=>{
             try {
-                  const { data } = await axios.delete(`http://localhost:4000/author/delete/video/blog/${id}`,
+                  // const { data } = await axios.delete(`http://localhost:4000/author/delete/video/blog/${id}`,
+                  const { data } = await axios.delete(`https://blogvantagebackend-2.onrender.com/author/delete/video/blog/${id}`,
                     { withCredentials: true }
                   )
             
@@ -21,7 +22,8 @@ const MyVideoBlogs = () => {
       useEffect(() => {
             const fetchBlogs = async () => {
                   try {
-                        const { data } = await axios.get("http://localhost:4000/author/view/videoblog", { withCredentials: true })
+                        // const { data } = await axios.get("http://localhost:4000/author/view/videoblog", { withCredentials: true })
+                        const { data } = await axios.get("https://blogvantagebackend-2.onrender.com/author/view/videoblog", { withCredentials: true })
                         console.log(data);
                         setMyBlogs(data);
                         // toast.success("")

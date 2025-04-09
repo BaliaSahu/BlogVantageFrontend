@@ -13,7 +13,8 @@ const AllAuthor = () => {
   useEffect(() => {
     const fetchAuthors = async () => {
       try {
-        const { data } = await axios.get("http://localhost:4000/user/get/allauthor",
+        // const { data } = await axios.get("http://localhost:4000/user/get/allauthor",
+        const { data } = await axios.get("https://blogvantagebackend-2.onrender.com/user/get/allauthor",
           { withCredentials: true })
         console.log(data);
         setAuthors(data);

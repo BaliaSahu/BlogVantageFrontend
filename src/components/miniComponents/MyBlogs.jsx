@@ -10,7 +10,8 @@ const MyBlogs = () => {
     const fetchMyBlogs = async () => {
       console.log("fetchMyBlogs");
       try {
-        const { data } = await axios.get("http://localhost:4000/author/view/blogs", { withCredentials: true });
+        // const { data } = await axios.get("http://localhost:4000/author/view/blogs", { withCredentials: true });
+        const { data } = await axios.get("https://blogvantagebackend-2.onrender.com/author/view/blogs", { withCredentials: true });
         setMyBlogs(data)
         console.log(data);
       } catch (err) {
@@ -21,7 +22,8 @@ const MyBlogs = () => {
   }, [])
   const deleteBlogHandler = async (id) => {
     try {
-      const { data } = await axios.delete(`http://localhost:4000/author/delete/blog/${id}`,
+      // const { data } = await axios.delete(`http://localhost:4000/author/delete/blog/${id}`,
+      const { data } = await axios.delete(`https://blogvantagebackend-2.onrender.com/author/delete/blog/${id}`,
         { withCredentials: true }
       )
 

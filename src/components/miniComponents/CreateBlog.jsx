@@ -56,7 +56,8 @@ const CreateBlog = () => {
     }
 
     try {
-      const { data } = await axios.post("http://localhost:4000/author/create/blogs", formData,
+      // const { data } = await axios.post("http://localhost:4000/author/create/blogs", formData,
+      const { data } = await axios.post("https://blogvantagebackend-2.onrender.com/author/create/blogs", formData,
         {
           withCredentials: true,
           headers: { "Content-Type": "multipart/form-data" }

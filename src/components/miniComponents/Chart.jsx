@@ -38,7 +38,8 @@ const Chart = () => {
     const fetchMyBlogs = async () => {
       console.log("fetchMyBlogs");
       try {
-        const { data } = await axios.get("http://localhost:4000/author/view/blogs", { withCredentials: true });
+        // const { data } = await axios.get("http://localhost:4000/author/view/blogs", { withCredentials: true });
+        const { data } = await axios.get("https://blogvantagebackend-2.onrender.com/author/view/blogs", { withCredentials: true });
         setMyBlogs(data)
         console.log(data);
         const totalLikes = data.reduce((acc, blog) => acc + blog.likedBy.length, 0);
@@ -54,7 +55,8 @@ const Chart = () => {
     const fetchMyVideoBlogs = async () => {
       console.log("Video Blogs");
       try {
-        const { data } = await axios.get("http://localhost:4000/author/view/videoblog", { withCredentials: true })
+        // const { data } = await axios.get("http://localhost:4000/author/view/videoblog", { withCredentials: true })
+        const { data } = await axios.get("https://blogvantagebackend-2.onrender.com/author/view/videoblog", { withCredentials: true })
         setMyVideoBlogs(data)
         console.log(data);
         const totalLikes = data.reduce((acc, blog) => acc + blog.likedBy.length, 0);

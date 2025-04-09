@@ -17,7 +17,8 @@ const SingleBlog = () => {
     const getSingleBlog = async () => {
       try {
         console.log(id)
-        const { data } = await axios.get(`http://localhost:4000/user/blog/${id}`, {
+        // const { data } = await axios.get(`http://localhost:4000/user/blog/${id}`, {
+        const { data } = await axios.get(`https://blogvantagebackend-2.onrender.com/user/blog/${id}`, {
           withCredentials: true
         })
         console.log(data);
@@ -40,7 +41,8 @@ const SingleBlog = () => {
   }
   const likeBlog=async()=>{
     try{
-      const {data}=await axios.post(`http://localhost:4000/user/blog/like/${id}`,{},{
+      // const {data}=await axios.post(`http://localhost:4000/user/blog/like/${id}`,{},{
+      const {data}=await axios.post(`https://blogvantagebackend-2.onrender.com/blog/like/${id}`,{},{
         withCredentials:true
       })
       console.log(data);
@@ -52,7 +54,8 @@ const SingleBlog = () => {
   }
   const disLikeBlog=async()=>{
     try{
-      const {data}=await axios.post(`http://localhost:4000/user/blog/dislike/${id}`,{},{
+      // const {data}=await axios.post(`http://localhost:4000/user/blog/dislike/${id}`,{},{
+      const {data}=await axios.post(`https://blogvantagebackend-2.onrender.com/user/blog/dislike/${id}`,{},{
         withCredentials:true
       })
       console.log(data);
@@ -64,7 +67,8 @@ const SingleBlog = () => {
   }
   const reportBlog=async()=>{
     try {
-      const { data } = await axios.post(`http://localhost:4000/user/blog/report/${id}`, {}, { withCredentials: true });
+      // const { data } = await axios.post(`http://localhost:4000/user/blog/report/${id}`, {}, { withCredentials: true });
+      const { data } = await axios.post(`https://blogvantagebackend-2.onrender.com/user/blog/report/${id}`, {}, { withCredentials: true });
       console.log(data);
       toast.success("Blog Reported");
       setReported(true);

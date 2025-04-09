@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { Context } from '../../main'
 // import LatestBlog from '../miniComponents/LatestBlog'
-import LatestBlog from '../miniComponents/LatestBlog.jsx';
+import LatestBlog from '../minicomponents/LatestBlog.jsx';
 
 
 
