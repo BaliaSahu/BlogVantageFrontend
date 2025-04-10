@@ -23,8 +23,8 @@ const UpdateBlog = () => {
     const fetchBlog = async (e) => {
       e?.preventDefault();
       try {
-        // const { data } = await axios.get(`http://localhost:4000/user/blog/${id}`,
-        const { data } = await axios.get(`https://blogvantagebackend-2.onrender.com/user/blog/${id}`,
+        const { data } = await axios.get(`http://localhost:4000/user/blog/${id}`,
+        // const { data } = await axios.get(`https://blogvantagebackend-2.onrender.com/user/blog/${id}`,
           { withCredentials: true }
         )
         console.log(data);
@@ -66,8 +66,8 @@ const UpdateBlog = () => {
         updatedData.append("photo2", photo2);
       }
       try {
-        // const { data } = await axios.patch(`http://localhost:4000/author/update/blogs/${id}`,
-        const { data } = await axios.patch(`https://blogvantagebackend-2.onrender.com/author/update/blogs/${id}`,
+        const { data } = await axios.patch(`http://localhost:4000/author/update/blogs/${id}`,
+        // const { data } = await axios.patch(`https://blogvantagebackend-2.onrender.com/author/update/blogs/${id}`,
           updatedData,
           {
           withCredentials: true,

@@ -16,8 +16,8 @@ const SingleVideoBlog = () => {
             const getSingleBlog = async () => {
               try {
                 console.log(id)
-                // const { data } = await axios.get(`http://localhost:4000/user/videoblog/${id}`, {
-                const { data } = await axios.get(`https://blogvantagebackend-2.onrender.com/user/videoblog/${id}`, {
+                const { data } = await axios.get(`http://localhost:4000/user/videoblog/${id}`, {
+                // const { data } = await axios.get(`https://blogvantagebackend-2.onrender.com/user/videoblog/${id}`, {
                   withCredentials: true
                 })
                 console.log(data);
@@ -35,8 +35,8 @@ const SingleVideoBlog = () => {
           }, []);
           const likeBlog=async()=>{
             try{
-              // const {data}=await axios.post(`http://localhost:4000/user/videoblog/like/${id}`,{},{
-              const {data}=await axios.post(`https://blogvantagebackend-2.onrender.com/user/videoblog/like/${id}`,{},{
+              const {data}=await axios.post(`http://localhost:4000/user/videoblog/like/${id}`,{},{
+              // const {data}=await axios.post(`https://blogvantagebackend-2.onrender.com/user/videoblog/like/${id}`,{},{
                 withCredentials:true
               })
               console.log(data);
@@ -48,8 +48,8 @@ const SingleVideoBlog = () => {
           }
           const disLikeBlog=async()=>{
             try{
-              // const {data}=await axios.post(`http://localhost:4000/user/videoblog/dislike/${id}`,{},{
-              const {data}=await axios.post(`https://blogvantagebackend-2.onrender.com/user/videoblog/dislike/${id}`,{},{
+              const {data}=await axios.post(`http://localhost:4000/user/videoblog/dislike/${id}`,{},{
+              // const {data}=await axios.post(`https://blogvantagebackend-2.onrender.com/user/videoblog/dislike/${id}`,{},{
                 withCredentials:true
               })
               console.log(data);
@@ -61,8 +61,8 @@ const SingleVideoBlog = () => {
           }
           const reportBlog=async()=>{
             try {
-              // const { data } = await axios.post(`http://localhost:4000/user/videoblog/report/${id}`, {}, { withCredentials: true });
-              const { data } = await axios.post(`https://blogvantagebackend-2.onrender.com/user/videoblog/report/${id}`, {}, { withCredentials: true });
+              const { data } = await axios.post(`http://localhost:4000/user/videoblog/report/${id}`, {}, { withCredentials: true });
+              // const { data } = await axios.post(`https://blogvantagebackend-2.onrender.com/user/videoblog/report/${id}`, {}, { withCredentials: true });
               console.log(data);
               toast.success("Blog Reported");
               setReported(true);

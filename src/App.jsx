@@ -28,8 +28,8 @@ const App = () => {
 
     const fetchVideoBlogs=async()=>{
       try{
-        // const {data}=await axios.get("http://localhost:4000/user/allvideoblogs",{
-        const {data}=await axios.get("https://blogvantagebackend-2.onrender.com/user/allvideoblogs",{
+        const {data}=await axios.get("http://localhost:4000/user/allvideoblogs",{
+        // const {data}=await axios.get("https://blogvantagebackend-2.onrender.com/user/allvideoblogs",{
 
           withCredentials:true
         })
@@ -41,8 +41,8 @@ const App = () => {
     }
     const fetchBlogs=async()=>{
       try{
-        // const {data}=await axios.get("http://localhost:4000/user/allblogs",{
-        const {data}=await axios.get("https://blogvantagebackend-2.onrender.com/user/allblogs",{
+        const {data}=await axios.get("http://localhost:4000/user/allblogs",{
+        // const {data}=await axios.get("https://blogvantagebackend-2.onrender.com/user/allblogs",{
           withCredentials:true
         })
         setBlogs(data.allBlogs);
