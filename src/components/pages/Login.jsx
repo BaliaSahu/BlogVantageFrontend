@@ -17,8 +17,7 @@ const Login = () => {
     try {
       e.preventDefault();
       const { data } = await axios.post("http://localhost:4000/user/login",
-      // const { data } = await axios.post("https://blogvantagebackend-2.onrender.com/user/login",
-        {
+       {
           email,
           password
         }

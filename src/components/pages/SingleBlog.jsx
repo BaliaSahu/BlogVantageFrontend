@@ -18,7 +18,6 @@ const SingleBlog = () => {
       try {
         console.log(id)
         const { data } = await axios.get(`http://localhost:4000/user/blog/${id}`, {
-        // const { data } = await axios.get(`https://blogvantagebackend-2.onrender.com/user/blog/${id}`, {
           withCredentials: true
         })
         console.log(data);

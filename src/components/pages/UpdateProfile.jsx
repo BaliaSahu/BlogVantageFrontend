@@ -30,7 +30,6 @@ const UpdateProfile = () => {
             fd.append("avatar", avatar);
             try {
                   const { data } = await axios.patch("http://localhost:4000/profile/edit",
-                  // const { data } = await axios.patch("https://blogvantagebackend-2.onrender.com/profile/edit",
                         fd
                         , {
                               withCredentials: true,

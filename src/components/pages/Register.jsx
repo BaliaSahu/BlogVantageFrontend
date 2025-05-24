@@ -42,8 +42,7 @@ const Register = () => {
     console.log(formData);
     try{
         const {data}=await axios.post("http://localhost:4000/user/signup",
-        // const {data}=await axios.post("https://blogvantagebackend-2.onrender.com/user/signup",
-          formData
+         formData
           ,{
           withCredentials:true,
           headers:{"Content-Type":"multipart/form-data"}

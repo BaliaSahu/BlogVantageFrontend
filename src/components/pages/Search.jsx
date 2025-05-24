@@ -14,7 +14,6 @@ const Search = () => {
       const searchHandler = async () => {
             try {
                   const { data } = await axios.get(`http://localhost:4000/user/search/${searchText}`, {
-                  // const { data } = await axios.get(`https://blogvantagebackend-2.onrender.com/user/search/${searchText}`, {
                         withCredentials: true
                   })
                   console.log(data);

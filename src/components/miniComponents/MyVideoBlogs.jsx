@@ -8,7 +8,6 @@ const MyVideoBlogs = () => {
       const deleteBlogHandler=async(id)=>{
             try {
                   const { data } = await axios.delete(`http://localhost:4000/author/delete/video/blog/${id}`,
-                  // const { data } = await axios.delete(`https://blogvantagebackend-2.onrender.com/author/delete/video/blog/${id}`,
                     { withCredentials: true }
                   )
             

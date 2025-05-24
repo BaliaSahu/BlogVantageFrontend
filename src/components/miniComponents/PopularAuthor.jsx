@@ -8,8 +8,7 @@ const PopularAuthor = () => {
   useEffect(()=>{
     const fetchUser=async()=>{
       const {data}=await axios.get("http://localhost:4000/user/get/allauthor",{withCredentials:true})
-      // const {data}=await axios.get("https://blogvantagebackend-2.onrender.com/get/allauthor",{withCredentials:true})
-      setAuthors(data);
+     setAuthors(data);
 
       console.log(data);
       console.log(data.details)

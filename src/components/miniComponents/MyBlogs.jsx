@@ -11,7 +11,6 @@ const MyBlogs = () => {
       console.log("fetchMyBlogs");
       try {
         const { data } = await axios.get("http://localhost:4000/author/view/blogs", { withCredentials: true });
-        // const { data } = await axios.get("https://blogvantagebackend-2.onrender.com/author/view/blogs", { withCredentials: true });
         setMyBlogs(data)
         console.log(data);
       } catch (err) {

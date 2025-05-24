@@ -63,7 +63,6 @@ const CreateVideoBlog = () => {
                   formData.append("public_id2", public_id2);
 
                   const {data}=await axios.post("http://localhost:4000/author/create/videoblog",formData,
-                  // const {data}=await axios.post("https://blogvantagebackend-2.onrender.com/author/create/videoblog",formData,
                         {
                               withCredentials:true
                         }

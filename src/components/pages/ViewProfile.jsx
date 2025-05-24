@@ -13,7 +13,6 @@ const ViewProfile = () => {
             const getProfile = async () => {
                   try {
                         const { data } = await axios.get(`http://localhost:4000/profile/view/${id}`, { withCredentials: true })
-                        // const { data } = await axios.get(`https://blogvantagebackend-2.onrender.com/profile/view/${id}`, { withCredentials: true })
                         setDetails(data.ProfileDetails);
                         console.log(data.ProfileDetails);
                         setProfile(data.ProfileDetails.avatar.url)

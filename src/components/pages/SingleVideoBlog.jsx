@@ -62,7 +62,6 @@ const SingleVideoBlog = () => {
           const reportBlog=async()=>{
             try {
               const { data } = await axios.post(`http://localhost:4000/user/videoblog/report/${id}`, {}, { withCredentials: true });
-              // const { data } = await axios.post(`https://blogvantagebackend-2.onrender.com/user/videoblog/report/${id}`, {}, { withCredentials: true });
               console.log(data);
               toast.success("Blog Reported");
               setReported(true);
